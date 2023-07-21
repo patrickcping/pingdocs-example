@@ -1,8 +1,15 @@
 # "Username/Password Form" - password (ID: local.howu8n9hsc.payload.output.password)
 
+Variable written:
+* "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](./howu8n9hsc.md))
+
+Variable read:
+* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+
 ## Data Path
 
 Orange = Variable written
+
 Green = Variable Read
 
 ```mermaid
@@ -57,6 +64,12 @@ flowchart TD
     
     classDef write fill:#f96
     classDef read fill:#0A3
+    linkStyle 2 stroke:red,stroke-width:4px;
+    linkStyle 3 stroke:red,stroke-width:4px;
+    linkStyle 4 stroke:red,stroke-width:4px;
+    linkStyle 5 stroke:red,stroke-width:4px;
+    linkStyle 6 stroke:red,stroke-width:4px;
+    linkStyle 7 stroke:red,stroke-width:4px;
 
     click lz4v4r9c4m "#lz4v4r9c4m" "Doc"
     click howu8n9hsc "#howu8n9hsc" "Doc"

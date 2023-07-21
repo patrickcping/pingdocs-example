@@ -1,8 +1,16 @@
 # "User Lookup" - matchedUser.id (ID: local.icv9ot1nro.payload.output.matchedUser.id)
 
+Variable written:
+* "User Lookup" PingOne Connector (Node ID: [icv9ot1nro](./icv9ot1nro.md))
+
+Variable read:
+* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+* "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](./ldguma4s6x.md))
+
 ## Data Path
 
 Orange = Variable written
+
 Green = Variable Read
 
 ```mermaid
@@ -57,6 +65,14 @@ flowchart TD
     
     classDef write fill:#f96
     classDef read fill:#0A3
+    linkStyle 6 stroke:red,stroke-width:4px;
+    linkStyle 7 stroke:red,stroke-width:4px;
+    linkStyle 12 stroke:red,stroke-width:4px;
+    linkStyle 13 stroke:red,stroke-width:4px;
+    linkStyle 15 stroke:red,stroke-width:4px;
+    linkStyle 19 stroke:red,stroke-width:4px;
+    linkStyle 23 stroke:red,stroke-width:4px;
+    linkStyle 24 stroke:red,stroke-width:4px;
 
     click lz4v4r9c4m "#lz4v4r9c4m" "Doc"
     click howu8n9hsc "#howu8n9hsc" "Doc"
