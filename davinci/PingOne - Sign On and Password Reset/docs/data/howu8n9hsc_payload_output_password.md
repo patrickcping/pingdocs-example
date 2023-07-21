@@ -5,6 +5,7 @@ Variable written:
 
 Variable read:
 * "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+* "Input formatting" HTTP Connector (Node ID: [xlvsie51oh](./xlvsie51oh.md))
 
 ## Data Path
 
@@ -35,7 +36,9 @@ flowchart TD
     3of58vu7g8 -->|No Match| K{Action Decision}
     H -->|True| j9ekv98w5p[Reset Password Form]
     I -->|True| j9ekv98w5p
-    J -->|True| 760w48p7zi[Create Shadow User]
+    J -->|True| xlvsie51oh[Input formatting]:::read
+    xlvsie51oh --> J1{Action Decision}
+    J1 -->|True| 760w48p7zi[Create Shadow User]
     K -->|True| nf63ecqmal[Unexpected Password State]
     j9ekv98w5p --> L{Action Decision}
     L -->|True| ldguma4s6x[Reset Password]
@@ -70,6 +73,10 @@ flowchart TD
     linkStyle 5 stroke:red,stroke-width:4px;
     linkStyle 6 stroke:red,stroke-width:4px;
     linkStyle 7 stroke:red,stroke-width:4px;
+    linkStyle 12 stroke:red,stroke-width:4px;
+    linkStyle 13 stroke:red,stroke-width:4px;
+    linkStyle 17 stroke:red,stroke-width:4px;
+    linkStyle 21 stroke:red,stroke-width:4px;
 
     click lz4v4r9c4m "#lz4v4r9c4m" "Doc"
     click howu8n9hsc "#howu8n9hsc" "Doc"
