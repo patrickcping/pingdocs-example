@@ -1,11 +1,11 @@
 # "User Lookup" - matchedUser.id (ID: local.icv9ot1nro.payload.output.matchedUser.id)
 
 Variable written:
-* "User Lookup" PingOne Connector (Node ID: [icv9ot1nro](./icv9ot1nro.md))
+* "User Lookup" PingOne Connector (Node ID: [icv9ot1nro](../nodes/icv9ot1nro.md))
 
 Variable read:
-* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
-* "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](./ldguma4s6x.md))
+* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](../nodes/dnu7jt3sjz.md))
+* "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](../nodes/ldguma4s6x.md))
 
 ## Data Path
 

@@ -1,10 +1,10 @@
 # "Username/Password Form" - password (ID: local.howu8n9hsc.payload.output.password)
 
 Variable written:
-* "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](./howu8n9hsc.md))
+* "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](../nodes/howu8n9hsc.md))
 
 Variable read:
-* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](../nodes/dnu7jt3sjz.md))
 
 ## Data Path
 
