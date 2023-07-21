@@ -37,7 +37,7 @@
                 <h1 class="heading" data-id="heading">Enter New Password</h1>
                 <h4 class="heading heading--4" data-id="heading" style="text-align: center;">If you have an active account with a valid email address, you will receive an email with a recovery code which you may enter here, along with a new password. If you do not have an account or email, please contact your administrator to recover your password.			</h4>
                 <div data-skcomponent="skerror" class="feedback feedback--error sk-alert sk-alert-danger has-text-danger has-background-danger-light" data-skvisibility=""></div>
-                <form class="form" id='recoveryCodeForm' data-id="recoveryCodeForm">
+                <form class="form1" id='recoveryCodeForm' data-id="recoveryCodeForm">
                     <div class="field float-label">
                         <input class="text-input float-label__input" data-id="recoveryCode-input" id="recoveryCode" name="recoveryCode" type="text" value="" />
                         <label class="float-label__label" for="recoveryCode">Recovery Code</label>
@@ -113,7 +113,9 @@ flowchart TD
     3of58vu7g8 -->|No Match| K{Action Decision}
     H -->|True| j9ekv98w5p[Reset Password Form]
     I -->|True| j9ekv98w5p
-    J -->|True| 760w48p7zi[Create Shadow User]
+    J -->|True| xlvsie51oh[Input formatting]
+    xlvsie51oh --> J1{Action Decision}
+    J1 -->|True| 760w48p7zi[Create Shadow User]
     K -->|True| nf63ecqmal[Unexpected Password State]
     j9ekv98w5p --> L{Action Decision}
     L -->|True| ldguma4s6x[Reset Password]

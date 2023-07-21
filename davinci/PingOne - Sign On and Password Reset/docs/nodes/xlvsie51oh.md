@@ -1,28 +1,42 @@
-# "Username/Password Form" - password (ID: local.howu8n9hsc.payload.output.password)
+# "Input Formatting" - HTTP Connector (ID: xlvsie51oh)
 
-Variable written:
-* "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](../nodes/howu8n9hsc.md))
+**Action** Make REST API Call
 
-Variable read:
-* "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](../nodes/dnu7jt3sjz.md))
-* "Input formatting" HTTP Connector (Node ID: [xlvsie51oh](../nodes/xlvsie51oh.md))
+## Configuration
 
-## Data Path
+### General Settings
 
-Orange = Variable written
+| Setting                | Static Value  | Variable  |  
+|------------------------|----------------------------------------|-------------------|
+| URL | `https://custom-service.com/?password={{local.howu8n9hsc.payload.output.password}}` | N/a |
+| HTTP Method | GET | N/a |
+| Body | *Not configured* | N/a |
 
-Green = Variable Read
+
+### Canvas Settings
+
+| Setting                | Static Value  | Variable  |  
+|------------------------|----------------------------------------|-------------------|
+| Node Title | `Input formatting` | N/a |
+| Node Description | *Default* | N/a |
+| Node Background Color | *Default* | N/a |
+| Expire Authentication Token | *Default* | N/a |
+| Expire Flow Instance Cache | *Default* | N/a |
+| Expire Node Instance Cache | *Default* | N/a |
+| Expire Node Instance Cache List | *Default* | N/a |
+
+## Flow Posture
 
 ```mermaid
 flowchart TD
     lz4v4r9c4m[Variables] --> A{Action Decision}
-    A -->|True| howu8n9hsc[Username/Password Form]:::write
+    A -->|True| howu8n9hsc[Username/Password Form]
     howu8n9hsc --> B{Action Decision}
     B -->|True| uob50pnvdv[Button Pressed?]
     uob50pnvdv -->|submit| C{Action Decision}
     C -->|True| icv9ot1nro[User Lookup]
     icv9ot1nro --> F{Action Decision}
-    F -->|Any Trigger Completes| dnu7jt3sjz[Check Password]:::read
+    F -->|Any Trigger Completes| dnu7jt3sjz[Check Password]
     uob50pnvdv -->|forgotPassword| D{Action Decision}
     D -->|True| 8m0sspk0ee[Username Form]
     uob50pnvdv -->|No Match| E{Action Decision}
@@ -36,8 +50,10 @@ flowchart TD
     3of58vu7g8 -->|No Match| K{Action Decision}
     H -->|True| j9ekv98w5p[Reset Password Form]
     I -->|True| j9ekv98w5p
-    J -->|True| xlvsie51oh[Input formatting]:::read
+    J -->|True| xlvsie51oh[Input formatting]
+    subgraph ide1 [Test]
     xlvsie51oh --> J1{Action Decision}
+    end
     J1 -->|True| 760w48p7zi[Create Shadow User]
     K -->|True| nf63ecqmal[Unexpected Password State]
     j9ekv98w5p --> L{Action Decision}
@@ -65,18 +81,6 @@ flowchart TD
     V -->|True| 760w48p7zi
     V -->|False| xe7a3y02pq[Invalid OTP/password]
     
-    classDef write fill:#f96
-    classDef read fill:#0A3
-    linkStyle 2 stroke:red,stroke-width:4px;
-    linkStyle 3 stroke:red,stroke-width:4px;
-    linkStyle 4 stroke:red,stroke-width:4px;
-    linkStyle 5 stroke:red,stroke-width:4px;
-    linkStyle 6 stroke:red,stroke-width:4px;
-    linkStyle 7 stroke:red,stroke-width:4px;
-    linkStyle 12 stroke:red,stroke-width:4px;
-    linkStyle 13 stroke:red,stroke-width:4px;
-    linkStyle 17 stroke:red,stroke-width:4px;
-    linkStyle 21 stroke:red,stroke-width:4px;
 
     click lz4v4r9c4m "#lz4v4r9c4m" "Doc"
     click howu8n9hsc "#howu8n9hsc" "Doc"
@@ -101,3 +105,24 @@ flowchart TD
     click lo3onszyab "#lo3onszyab" "Doc"
     click xe7a3y02pq "#xe7a3y02pq" "Doc"
 ```
+
+### Previous Nodes
+
+* **Node**: "Functions" Functions Connector (Node ID: [3of58vu7g8](./3of58vu7g8.md))
+  * **Action Decision**: `true`
+
+### Following Nodes
+
+* **Action Decision**: `true`
+  * **Node**: "Create Shadow User" User Policy Connector (Node ID: [760w48p7zi](./760w48p7zi.md))
+
+## Data Flow Posture
+
+### Output variables
+
+*No output variables*
+
+### Referenced variables
+
+* `password` ([Link](../data/howu8n9hsc_payload_output_password.md))
+  * "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](./howu8n9hsc.md))

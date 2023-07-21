@@ -66,7 +66,9 @@ flowchart TD
     3of58vu7g8 -->|No Match| K{Action Decision}
     H -->|True| j9ekv98w5p[Reset Password Form]
     I -->|True| j9ekv98w5p
-    J -->|True| 760w48p7zi[Create Shadow User]
+    J -->|True| xlvsie51oh[Input formatting]
+    xlvsie51oh --> J1{Action Decision}
+    J1 -->|True| 760w48p7zi[Create Shadow User]
     K -->|True| nf63ecqmal[Unexpected Password State]
     j9ekv98w5p --> L{Action Decision}
     L -->|True| ldguma4s6x[Reset Password]
@@ -194,6 +196,7 @@ Ping Identity online documentation: [HTTP Connector](https://docs.pingidentity.c
 
 | Node ID    | Node Name   | Node Title         | Capability         | Docs Link |
 |------------|-------------|--------------------|--------------------|-----------|
+| <a name="xlvsie51oh"></a>`xlvsie51oh` | `Http`    | `Input Formatting` | Make REST API Call | [Link](./nodes/xlvsie51oh.md)      |
 | <a name="k1vc9enhqp"></a>`k1vc9enhqp` | `Http`    | `Password Recovery Form` | Custom HTML Template | [Link](./nodes/k1vc9enhqp.md)      |
 | <a name="j9ekv98w5p"></a>`j9ekv98w5p` | `Http`    | `Reset Password Form` | Custom HTML Template | [Link](./nodes/j9ekv98w5p.md)      |
 | <a name="howu8n9hsc"></a>`howu8n9hsc` | `Http`    | `Username/Password Form` | Custom HTML Template | [Link](./nodes/howu8n9hsc.md)      |
