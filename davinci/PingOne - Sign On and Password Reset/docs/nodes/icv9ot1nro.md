@@ -113,3 +113,20 @@ flowchart TD
 
 * **Action Decision**: `Any trigger completes`
   * **Node**: "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+
+## Data Flow Posture
+
+### Output variables referenced in the flow
+
+The following variables are set as output variables of this node, with any nodes that refer to this variable directly.
+
+* `matchedUser.Id` ([Link](../data/icv9ot1nro_payload_output_matcheduser_id.md))
+  * "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+  * "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](./ldguma4s6x.md))
+
+### Referenced input variables
+
+The following variables are set in nodes earlier in the flow, and are referenced in this node.
+
+* `username` ([Link](../data/howu8n9hsc_payload_output_username.md))
+  * "Username/Password Form" HTTP Connector (Node ID: [howu8n9hsc](./howu8n9hsc.md))
