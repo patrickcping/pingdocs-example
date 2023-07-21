@@ -1,4 +1,4 @@
-# k1vc9enhqp - "Password Recovery Form" - HTTP Connector
+# "Password Recovery Form" - HTTP Connector (ID: k1vc9enhqp)
 
 **Action** Custom HTML Template
 
@@ -169,10 +169,10 @@ flowchart TD
 
 ### Previous Nodes
 
-* **Node**: "Send Recovery Code" PingOne Connector (ID: [fhz3x7ukuh](./fhz3x7ukuh.md))
+* **Node**: "Send Recovery Code" PingOne Connector (Node ID: [fhz3x7ukuh](./fhz3x7ukuh.md))
   * **Action Decision**: `Any trigger completes`
 
 ### Following Nodes
 
 * **Action Decision**: `true`
-  * **Node**: "Recover Password" PingOne Connector (ID: [lo3onszyab](./lo3onszyab.md))
+  * **Node**: "Recover Password" PingOne Connector (Node ID: [lo3onszyab](./lo3onszyab.md))

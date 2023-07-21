@@ -1,4 +1,4 @@
-# icv9ot1nro - "User Lookup" - PingOne Connector
+# "User Lookup" - PingOne Connector (ID: icv9ot1nro)
 
 **Action** Find User
 
@@ -9,7 +9,7 @@
 | Setting                | Static Value  | Variable  |  
 |------------------------|----------------------------------------|-------------------|
 | PingOne Attributes | - `username` | N/a |
-| Identifier| N/a | `username` from "Username/Password Form" (ID: [howu8n9hsc](./howu8n9hsc.md)) |
+| Identifier| N/a | `username` from "Username/Password Form" (Node ID: [howu8n9hsc](./howu8n9hsc.md)) |
 | Return User Password Status | Disabled | N/a |
 
 ### Canvas Settings
@@ -17,12 +17,12 @@
 | Setting                | Static Value  | Variable  |  
 |------------------------|----------------------------------------|-------------------|
 | Node Title | `User Lookup` | N/a |
-| Node Description | *Default* | N/a |
-| Node Background Color | *Default* | N/a |
-| Expire Authentication Token | *Default* | N/a |
-| Expire Flow Instance Cache | *Default* | N/a |
-| Expire Node Instance Cache | *Default* | N/a |
-| Expire Node Instance Cache List | *Default* | N/a |
+| Node Description | *Not configured* | N/a |
+| Node Background Color | *Not configured* | N/a |
+| Expire Authentication Token | *Not configured* | N/a |
+| Expire Flow Instance Cache | *Not configured* | N/a |
+| Expire Node Instance Cache | *Not configured* | N/a |
+| Expire Node Instance Cache List | *Not configured* | N/a |
 
 ## Flow Posture
 
@@ -105,11 +105,11 @@ flowchart TD
 
 ### Previous Nodes
 
-* **Node**: "Button Pressed?" Function Connector (ID: [uob50pnvdv](./uob50pnvdv.md))
+* **Node**: "Button Pressed?" Function Connector (Node ID: [uob50pnvdv](./uob50pnvdv.md))
   * **Condition**: `submit`
     * **Action Decision**: `true`
 
 ### Following Nodes
 
-* **Action Decision**: Any trigger completes
-  * **Node**: "Check Password" PingOne Connector (ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+* **Action Decision**: `Any trigger completes`
+  * **Node**: "Check Password" PingOne Connector (Node ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
