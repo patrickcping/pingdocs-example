@@ -194,7 +194,7 @@ Ping Identity online documentation: [HTTP Connector](https://docs.pingidentity.c
 
 | Node ID    | Node Name   | Node Title         | Capability         | Docs Link |
 |------------|-------------|--------------------|--------------------|-----------|
-| <a name="k1vc9enhqp"></a>`k1vc9enhqp` | `Http`    | `Recover Password` | Custom HTML Template | [Link](./nodes/k1vc9enhqp.md)      |
+| <a name="k1vc9enhqp"></a>`k1vc9enhqp` | `Http`    | `Password Recovery Form` | Custom HTML Template | [Link](./nodes/k1vc9enhqp.md)      |
 | <a name="j9ekv98w5p"></a>`j9ekv98w5p` | `Http`    | `Reset Password Form` | Custom HTML Template | [Link](./nodes/j9ekv98w5p.md)      |
 | <a name="howu8n9hsc"></a>`howu8n9hsc` | `Http`    | `Username/Password Form` | Custom HTML Template | [Link](./nodes/howu8n9hsc.md)      |
 | <a name="8m0sspk0ee"></a>`8m0sspk0ee` | `Http`    | `Username Form`   | Custom HTML Template | [Link](./nodes/8m0sspk0ee.md)      |
