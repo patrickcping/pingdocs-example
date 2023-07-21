@@ -70,7 +70,9 @@ flowchart TD
     linkStyle 12 stroke:red,stroke-width:4px;
     linkStyle 13 stroke:red,stroke-width:4px;
     linkStyle 15 stroke:red,stroke-width:4px;
+    linkStyle 16 stroke:red,stroke-width:4px;
     linkStyle 19 stroke:red,stroke-width:4px;
+    linkStyle 20 stroke:red,stroke-width:4px;
     linkStyle 23 stroke:red,stroke-width:4px;
     linkStyle 24 stroke:red,stroke-width:4px;
 
