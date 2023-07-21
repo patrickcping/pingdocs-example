@@ -132,11 +132,11 @@ flowchart TD
     R -->|True| qib48jbqzt[Unexpected Error]
     o9qu0nvyje --> S{Action Decision}
     S -->|Any Trigger Completes| fhz3x7ukuh[Send Recovery Code]
-    subgraph ide1 [Test]
     fhz3x7ukuh --> T{Action Decision}
-    end
     T -->|Any Trigger Completes| k1vc9enhqp[Password Recovery Form]
+    subgraph ide1 [Test]
     k1vc9enhqp --> U{Action Decision}
+    end
     U -->|True| lo3onszyab[Recover Password]
     lo3onszyab --> V{Action Decision}
     V -->|True| 760w48p7zi
@@ -169,11 +169,10 @@ flowchart TD
 
 ### Previous Nodes
 
-* **Node**: "Button Pressed?" Function Connector (ID: [uob50pnvdv](./uob50pnvdv.md))
-  * **Condition**: `submit`
-    * **Action Decision**: `true`
+* **Node**: "Send Recovery Code" PingOne Connector (ID: [fhz3x7ukuh](./fhz3x7ukuh.md))
+  * **Action Decision**: `Any trigger completes`
 
 ### Following Nodes
 
-* **Action Decision**: Any trigger completes
-  * **Node**: "Check Password" PingOne Connector (ID: [dnu7jt3sjz](./dnu7jt3sjz.md))
+* **Action Decision**: `true`
+  * **Node**: "Recover Password" PingOne Connector (ID: [lo3onszyab](./lo3onszyab.md))
