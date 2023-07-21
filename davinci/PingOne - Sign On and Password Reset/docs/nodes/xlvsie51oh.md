@@ -1,6 +1,6 @@
-# "Password Recovery Form" - HTTP Connector (ID: xlvsie51oh)
+# "Input Formatting" - HTTP Connector (ID: xlvsie51oh)
 
-**Action** REST API Call
+**Action** Make REST API Call
 
 ## Configuration
 
