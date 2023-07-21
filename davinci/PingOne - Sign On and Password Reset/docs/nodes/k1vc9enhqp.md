@@ -184,9 +184,9 @@ flowchart TD
 The following variables are set as output variables of this node, with any nodes that refer to this variable directly.
 
 * `currentPassword` ([Link](../data/k1vc9enhqp_payload_output_currentpassword.md))
-  * "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](./ldguma4s6x.md))
+  * "Recover Password" PingOne Connector (Node ID: [lo3onszyab](./lo3onszyab.md))
 * `newPassword` ([Link](../data/k1vc9enhqp_payload_output_newpassword.md))
-  * "Reset Password" PingOne Connector (Node ID: [ldguma4s6x](./ldguma4s6x.md))
+  * "Recover Password" PingOne Connector (Node ID: [lo3onszyab](./lo3onszyab.md))
 
 ### Referenced variables
 
